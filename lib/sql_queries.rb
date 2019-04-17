@@ -34,7 +34,7 @@ def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_th
 "SELECT users.name, SUM(pledges.amount) FROM users
  INNER JOIN pledges
  ON users.id = pledges.user_id
- INNER JOIN projects 
+ INNER JOIN projects
  ON pledges.project_id = projects.id
  GROUP BY projects.title
  ORDER BY pledges.amount, users.name;"
