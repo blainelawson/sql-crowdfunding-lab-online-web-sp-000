@@ -1,4 +1,4 @@
-CREATE TABLE project (
+CREATE TABLE projects (
   id PRIMARY KEY INTEGER,
   title TEXT,
   category TEXT,
@@ -7,13 +7,13 @@ CREATE TABLE project (
   end_date INTEGER
 );
 
-CREATE TABLE user (
+CREATE TABLE users (
   id PRIMARY KEY INTEGER,
   name TEXT,
   age INTEGER
 );
 
-CREATE TABLE pledge (
+CREATE TABLE pledges (
   id PRIMARY KEY INTEGER,
   amount INTEGER,
   user_id INTEGER,
