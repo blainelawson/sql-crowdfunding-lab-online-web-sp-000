@@ -12,3 +12,10 @@ CREATE TABLE user (
   name TEXT,
   age INTEGER
 );
+
+CREATE TABLE pledge (
+  id PRIMARY KEY INTEGER,
+  amount INTEGER,
+  user_id INTEGER,
+  project_id INTEGER
+);
